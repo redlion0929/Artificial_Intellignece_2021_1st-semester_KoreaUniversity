@@ -71,9 +71,24 @@
 > all rounder agent는 상황에 맞게 행동을 선택하기 때문에 다양한 state에 대해 유연하게 대처할 수 있다. 경쟁에서 이겨야 하는 상황에서 이 agent는 좋은 성능을 보여 줄것 이다. 따라서 your baseline3를 best로 정하였다.
 
 ### 4. 성과
-> baseline3는 baseline1, baseline2, baseline3, baseline(기본적으로 제공되는 상대 기준점)
+> baseline3는 baseline1, baseline2, baseline(기본적으로 제공되는 baseline)을 상대로 높은 승률과 점수를 얻음
 > 
+|Opponent|Winning Rate|
+|------|---|
+|baseline1|1.0|
+|baseline2|0.8|
+|baseline|1|
+
 > 
+|Opponent|Average Scores|
+|------|---|
+|baseline1|4.4|
+|baseline2|3|
+|baseline|11.4|
+
+> Q-learning을 적용하고싶었지만, 제한된 시간내에 더 많은 food를 먹어야하는 게임의 특성상 Agent가 학습할 시간이 상대적으로 부족했다. 
+> 하나의 baseline만을 이기는 것이 목적이라면 Q-learning을 사용하여 Agent를 학습시키면 된다. 하지만 새로운 상대를 만날경우 학습했던 데이터는 의미가 없어진다.  
 --------
 ## 총평
-> A+를 받음
+> Agent의 행동을 하나부터 열까지 모두 설계하였고 적절한 가중치를 찾는 것이 쉽지는 않았다. 하지만 가중치를 갱신할때마다 점점 좋아지는 Agent의 움직임을 확인할 수 있었다. 
+> 태어나서 가장 오랜 시간 동안 하나의 문제를 가지고 고민했었고, 결과가 나쁘지 않았기에 AI 분야에 더욱 흥미를 느끼게 되었다.
